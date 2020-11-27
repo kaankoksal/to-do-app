@@ -1,8 +1,3 @@
-development environment
-dependencies
-description of usage w/ edge cases
-features
-
 # TODO APP
 
 Todo App is a basic command line application. It can be used to store your daily tasks with functionalities like listing the tasks, adding new tasks and removing or completing a task.
