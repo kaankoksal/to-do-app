@@ -77,17 +77,20 @@ elif len(sys.argv) == 3 and sys.argv[1] == "-a":
 elif len(sys.argv) == 2 and sys.argv[1] == "-r":
     cant_remove()
 elif len(sys.argv) == 3 and sys.argv[1] == "-r":
-    try:
-        remove()
-    except FileNotFoundError:
-        no_file()
+    while True:
+        try:
+            remove()
+            break
+        except FileNotFoundError:
+            no_file()
 elif len(sys.argv) == 2 and sys.argv[1] == "-c":
     cant_complete()
 elif len(sys.argv) == 3 and sys.argv[1] == "-c":
-    try:
-        complete()
-    except FileNotFoundError:
-        no_file()
+    while True:
+        try:
+            complete()
+        except FileNotFoundError:
+            no_file()
 elif len(sys.argv) == 2:
     unknown()
 elif len(sys.argv) == 3:
